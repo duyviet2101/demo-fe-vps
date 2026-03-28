@@ -28,7 +28,7 @@ function App() {
       <div className="pointer-events-none absolute -left-40 -top-40 h-96 w-96 animate-float rounded-full bg-fitTeal/25 blur-3xl" />
       <div className="pointer-events-none absolute -right-24 top-20 h-80 w-80 animate-float rounded-full bg-fitBlue/20 blur-3xl [animation-delay:1.3s]" />
 
-      <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6 reveal [animation-delay:120ms]">
+      <header className="mx-auto flex w-full max-w-6xl animate-fadeUp items-center justify-between px-6 py-6 opacity-0 [animation-delay:120ms]">
         <div className="font-display text-2xl font-extrabold text-fitBlue">FIT UP</div>
         <a
           href="#join"
@@ -39,7 +39,7 @@ function App() {
       </header>
 
       <main className="mx-auto grid w-full max-w-6xl items-center gap-10 px-6 pb-20 pt-8 md:grid-cols-2 md:pt-16">
-        <section className="reveal [animation-delay:220ms]">
+        <section className="animate-fadeUp opacity-0 [animation-delay:220ms]">
           <p className="mb-3 inline-flex items-center rounded-full bg-white/80 px-4 py-1 text-sm font-semibold text-fitBlue shadow-sm">
             FIT UP 2026
           </p>
@@ -66,7 +66,7 @@ function App() {
           </div>
         </section>
 
-        <section className="reveal rounded-3xl bg-white/90 p-8 shadow-xl shadow-slate-300/40 backdrop-blur [animation-delay:320ms]">
+        <section className="animate-fadeUp rounded-3xl bg-white/90 p-8 opacity-0 shadow-xl shadow-slate-300/40 backdrop-blur [animation-delay:320ms]">
           <h2 className="font-display text-2xl font-bold text-fitBlue">Why FIT UP?</h2>
           <ul className="mt-6 space-y-4 text-slate-700">
             {highlights.map((item) => (
@@ -79,7 +79,7 @@ function App() {
         </section>
       </main>
 
-      <section id="programs" className="mx-auto w-full max-w-6xl px-6 pb-20 reveal [animation-delay:420ms]">
+      <section id="programs" className="mx-auto w-full max-w-6xl animate-fadeUp px-6 pb-20 opacity-0 [animation-delay:420ms]">
         <div className="grid gap-5 md:grid-cols-3">
           {programs.map((program) => (
             <article
@@ -93,7 +93,7 @@ function App() {
         </div>
       </section>
 
-      <section id="join" className="mx-auto w-full max-w-6xl px-6 pb-20 reveal [animation-delay:520ms]">
+      <section id="join" className="mx-auto w-full max-w-6xl animate-fadeUp px-6 pb-20 opacity-0 [animation-delay:520ms]">
         <div className="rounded-3xl bg-fitBlue px-8 py-10 text-white md:flex md:items-center md:justify-between">
           <div>
             <h2 className="font-display text-3xl font-bold">Ready to level up with FIT UP?</h2>
